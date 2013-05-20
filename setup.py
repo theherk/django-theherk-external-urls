@@ -8,7 +8,7 @@ def read(fname):
 setup(
     name='django-theherk-external-urls',
     version='1.1',
-    packages=['external-urls'],
+    packages=['menu_external_urls'],
     include_package_data=True,
     license='see file LICENSE',
     description='Django CMS plugin to allowing using external urls in the menu system.',
