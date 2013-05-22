@@ -10,6 +10,6 @@ class MenuExternalUrl(models.Model):
     page = models.OneToOneField(Page)
     menu_external_url = models.CharField(
         _('External URL'),
-        max_length=48,
+        max_length=200,
         blank=True
     )
