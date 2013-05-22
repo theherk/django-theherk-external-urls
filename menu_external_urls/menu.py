@@ -15,7 +15,7 @@ class MenuExternalUrlMod(Modifier):
         for node in nodes:
             try:
                 #Load External URL into nodes
-                menu_external_url = MenuExternalUrl.objects.get(page=node.id)
+                menu_external_url = MenuExternalUrl.objects.get(page=(node.id-1))
                 node.url = menu_external_url.menu_external_url
             except:
                 pass
